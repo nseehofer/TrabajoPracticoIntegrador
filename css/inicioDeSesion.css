@@ -1,0 +1,95 @@
+
+:root {
+    --colorUno: #000000;
+    --colorDos: #b4cf80;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+
+.btn {
+    color: #fff;
+    border-radius: 2em;
+    padding: 4px 1em;
+    border: none;
+}
+
+.btn-naranja {
+    background-color: var(--colorDos);
+}
+
+.btn-azul {
+    background-color: var(--colorUno);
+    font-size: 1.2em;
+}
+
+.btn-formularios {
+    width: 40%;
+    margin-top: 1em;
+}
+
+.Formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+h1 {
+    color: var(--azul);
+    font-weight: bold;
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 0.7em;
+}
+
+form {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    color: var(--naranja);
+    display: block;
+    margin-bottom: 0.5em;
+    font-size: 1.1em;
+}
+
+input {
+    border: 1px solid var(--colorDos); 
+    border-radius: 1em;
+    padding: 1em;
+    height: 2.5em;
+    width: 100%;
+    margin-bottom: 1em;
+    font-size: 1.1em;
+}
+
+
+#texto-Olvido-De-Contraseña {
+    color: var(--colorUno);
+    font-size: 0.75em;
+    text-align: center;
+    margin-top: -1em;
+    margin-left: 8em;
+}
+
+#texto-Registro{
+    font-size: small;
+    color: var(--colorUno);
+    margin-top: 0.5em;
+    text-align: center;
+    font-size: 0.9em;
+}
