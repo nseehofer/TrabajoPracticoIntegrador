@@ -24,11 +24,8 @@ html, body {
     border: none;
 }
 
-.btn-naranja {
-    background-color: var(--colorDos);
-}
 
-.btn-azul {
+.btn-negro {
     background-color: var(--colorUno);
     font-size: 1.2em;
 }
