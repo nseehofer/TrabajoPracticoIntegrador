@@ -1,238 +1,186 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa;
-    color: #333;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
 }
 
-.encabezado {
-    background-color: #343a40;
-    padding: 10px 0;
-}
-
-.contenedor-encabezado {
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.logo {
-    height: 50px;
+.logo img {
+    /* Ajusta el tamaño del logo */
+    height: 100px; /* Ajuste de altura */
+    width: auto; /* Mantiene proporciones */
 }
 
-.navegacion {
-    display: flex;
-    align-items: center;
+.carrito {
+    /* Ajusta el tamaño del carrito y del icono de búsqueda */
+    width: 30px;
+    height: 30px;
 }
 
-.barra-busqueda {
-    padding: 5px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    margin-right: 20px;
-}
-
-.icono-carrito {
-    position: absolute;
-    top: 20px;
-    right: 25px;
-}
-.icono{
-    width: 25px;
-    height: 25px;
-}
-.menu {
-    background-color: #495057;
-    text-align: center;
+.search-bar input {
     padding: 10px;
-    font-size: 18px;
-    color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
-.contenedor-principal {
-    width: 90%;
-    max-width: 1200px;
-    margin: 20px auto;
-    background: #fff;
-    padding: 20px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-}
-
-.encabezado-curso {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    margin-bottom: 30px;
-}
-
-.foto-curso {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    margin-right: 30px;
-    border-radius: 10px;
-}
-
-.detalles-curso {
-    flex-grow: 1;
-}
-
-.titulo-curso {
-    font-size: 28px;
-    margin-bottom: 15px;
-    color: #495057;
-}
-
-.precio-curso, .duracion-curso, .descripcion-curso, .requisitos-curso {
-    margin: 10px 0;
-    font-size: 18px;
-    color: #6c757d;
-}
-
-.boton-inscripcion {
-    padding: 12px 20px;
-    background-color: #007bff;
-    color: white;
+.search-bar button {
+    background-color: transparent;
     border: none;
     cursor: pointer;
-    border-radius: 5px;
+}
+
+.cart {
+    position: relative;
+}
+
+.cart-count {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 3px 7px;
+    font-size: 12px;
+}
+
+.course-details {
+    display: flex;
+    padding: 20px;
+    background-color: white;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.course-image img {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.course-info {
+    margin-left: 20px;
+}
+
+.course-info h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.course-info p {
+    margin: 5px 0;
     font-size: 16px;
-    margin-top: 20px;
 }
 
-.boton-inscripcion:hover {
-    background-color: #0056b3;
+.inscribirse {
+    padding: 10px 20px;
+    background-color: #00bfa5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.contenidos-curso {
-    margin-bottom: 30px;
+.inscribirse:hover {
+    background-color: #008e76;
 }
 
-.contenidos-curso h2 {
+.class-contents {
+    padding: 20px;
+    background-color: white;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.class-contents h3 {
     font-size: 24px;
-    margin-bottom: 20px;
-    color: #495057;
+    margin-bottom: 15px;
 }
 
-.contenidos-curso ul {
-    list-style-type: none;
+.class-contents ul {
+    list-style: none;
     padding: 0;
 }
 
-.contenidos-curso li {
-    padding: 15px;
-    background-color: #e9ecef;
-    margin-bottom: 10px;
-    border-radius: 5px;
+.class-contents ul li {
     font-size: 18px;
-    color: #495057;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.teacher-info {
     display: flex;
-    justify-content: space-between;
-}
-
-.informacion-docente {
-    display: flex;
-    align-items: center;
-    margin-bottom: 30px;
-    background-color: #f1f3f5;
     padding: 20px;
-    border-radius: 10px;
+    background-color: white;
+    margin: 20px auto;
+    max-width: 1200px;
 }
 
-.foto-docente {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    background-color: #ddd;
-    margin-right: 30px;
-}
-
-.detalles-docente {
-    flex-grow: 1;
-}
-
-.nombre-docente {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #343a40;
-}
-
-.valoracion-docente {
-    font-size: 20px;
-    color: #ffc107;
-    margin-bottom: 15px;
-}
-
-.bio-docente {
-    font-size: 16px;
-    color: #6c757d;
-}
-
-.cursos-relacionados {
-    margin-top: 40px;
-}
-
-.cursos-relacionados h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #495057;
-}
-
-.curso-relacionado {
-    display: inline-block;
-    width: calc(25% - 20px);
-    margin-right: 20px;
-    margin-bottom: 20px;
-    background-color: #ffffff;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    text-align: center;
-}
-
-.curso-relacionado .foto-relacionado {
-    width: 100%;
+.teacher-photo img {
+    width: 150px;
     height: 150px;
-    background-color: #ddd;
-    margin-bottom: 15px;
-    border-radius: 5px;
+    border-radius: 50%;
 }
 
-.nombre-relacionado {
-    font-size: 18px;
-    color: #343a40;
-    margin-bottom: 10px;
+.teacher-details {
+    margin-left: 20px;
 }
 
-.duracion-relacionado, .precio-relacionado {
-    font-size: 16px;
-    color: #6c757d;
+.teacher-details h3 {
+    font-size: 24px;
 }
 
-.boton-ver-detalle {
-    padding: 10px 20px;
-    background-color: #28a745;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 16px;
-    margin-top: 10px;
+.rating span {
+    font-size: 20px;
+    color: gold;
 }
 
-.boton-ver-detalle:hover {
-    background-color: #218838;
+.related-courses {
+    padding: 20px;
+    background-color: white;
+    margin: 20px auto;
+    max-width: 1200px;
 }
 
-.pie-pagina {
-    background-color: #343a40;
-    color: #ffffff;
+.related-courses h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.course-card {
+    display: inline-block;
+    width: 23%;
+    margin-right: 2%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
     text-align: center;
-    padding: 20px 0;
+    border-color: yellow;
+}
+
+.course-card h4 {
+    font-size: 18px;
+    color: #00bfa5;
+}
+
+.course-card p {
+    font-size: 16px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #343a40;
+    color: white;
     margin-top: 40px;
 }

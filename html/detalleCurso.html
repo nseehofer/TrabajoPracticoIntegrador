@@ -5,73 +5,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalle del Curso</title>
     <link rel="stylesheet" href="../css/estilos_detalle_curso.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="encabezado">
-        <div class="contenedor-encabezado">
-            <img src="../images/LogoTest.png" alt="Logo" class="logo">
-            <nav class="navegacion">
-                <input type="text" placeholder="Buscar curso..." class="barra-busqueda">
-                <div class="icono-carrito">
-                    <img src="../images/carritoDeCompras.png" alt="carritoDeCompras" class="icono">
-                </div>
-            </nav>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <a href="#"><img src="../images/LogoTest.png" class="logo" alt="Logo"></a>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar...">
+            <button><img src="../images/icon_search.png" class="carrito" alt="Buscar"></button>
+        </div>
+        <div class="cart">
+            <a href="#"><img src="../images/carritoDeCompras.png" class="carrito"></span></a>
         </div>
     </header>
 
-    <div class="menu">MENÚ</div>
-
-    <main class="contenedor-principal">
-        <!-- Encabezado del Curso -->
-        <div class="encabezado-curso">
-            <img src="foto-curso.jpg" alt="Foto del Curso" class="foto-curso">
-            <div class="detalles-curso">
-                <h1 class="titulo-curso">Título del Curso</h1>
-                <p class="precio-curso"><strong>Valor:</strong></p>
-                <p class="duracion-curso"><strong>Tiempo de dedicación:</strong></p>
-                <p class="descripcion-curso"><strong>Descripción:</strong></p>
-                <p class="requisitos-curso"><strong>Requisitos previos:</strong></p>
-                <button class="boton-inscripcion">INSCRIBIRSE</button>
-            </div>
+    <!-- Detalle del curso -->
+    <section class="course-details">
+        <div class="course-image">
+            <img src="curso-imagen.png" alt="Imagen del Curso">
         </div>
+        <div class="course-info">
+            <h2>Diseñador UX/UI</h2>
+            <p><strong>Valor:</strong> $0000</p>
+            <p><strong>Duración:</strong> 13 meses</p>
+            <p><strong>Descripción:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p>
+            <p><strong>Requisitos previos:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <button class="inscribirse">Inscribirse</button>
+        </div>
+    </section>
 
-        <!-- Contenidos por Clase -->
-        <section class="contenidos-curso">
-            <h2>CONTENIDOS POR CLASE</h2>
-            <ul>
-                <li>Introducción</li>
-                <li>Lección 1</li>
-                <li>Lección 2</li>
-                <li>Exámenes</li>
-            </ul>
-        </section>
+    <!-- Contenidos por clase -->
+    <section class="class-contents">
+        <h3>Contenidos por clase</h3>
+        <ul>
+            <li>Módulo 1 - Introducción</li>
+            <li>Módulo 2 - Fundamentos de UX/UI</li>
+            <li>Módulo 3 - Herramientas de Diseño</li>
+            <li>Módulo 4 - Prototipado y Testeo</li>
+            <li>Módulo 5 - Proyecto Final</li>
+        </ul>
+    </section>
 
-        <!-- Información del Docente -->
-        <section class="informacion-docente">
-            <img src="foto-docente.jpg" alt="Foto del Docente" class="foto-docente">
-            <div class="detalles-docente">
-                <h2 class="nombre-docente">Nombre y Apellido</h2>
-                <div class="valoracion-docente"></div>
-                <p class="bio-docente"></p>
+    <!-- Detalles del docente -->
+    <section class="teacher-info">
+        <div class="teacher-photo">
+            <img src="docente.png" alt="Foto del docente">
+        </div>
+        <div class="teacher-details">
+            <h3>Juan Garay</h3>
+            <div class="rating">
+                <span>★★★★★</span>
             </div>
-        </section>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac feugiat eros.</p>
+        </div>
+    </section>
 
-        <!-- Cursos Relacionados -->
-        <section class="cursos-relacionados">
-            <h2>Cursos Relacionados</h2>
-            <div class="curso-relacionado">
-                <img src="foto-curso-relacionado.jpg" alt="Curso Relacionado" class="foto-relacionado">
-                <p class="nombre-relacionado"><strong>Nombre del Curso</strong></p>
-                <p class="duracion-relacionado">Duración: Horas</p>
-                <p class="precio-relacionado">Precio: </p>
-                <button class="boton-ver-detalle">Ver Detalle</button>
-            </div>
-            <!-- Repetir bloques para más cursos relacionados -->
-        </section>
-    </main>
+    <!-- Cursos relacionados -->
+    <section class="related-courses">
+        <h3>Cursos relacionados</h3>
+        <div class="course-card">
+            <h4>Agregar un subtítulo</h4>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p><strong>$0000</strong></p>
+            <p>Nombre del curso</p>
+            <p>20hs</p>
+            <a href="#">Ver detalle</a>
+        </div>
+        <div class="course-card">
+            <h4>Agregar un subtítulo</h4>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p><strong>$0000</strong></p>
+            <p>Nombre del curso</p>
+            <p>20hs</p>
+            <a href="#">Ver detalle</a>
+        </div>
+        <div class="course-card">
+            <h4>Agregar un subtítulo</h4>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p><strong>$0000</strong></p>
+            <p>Nombre del curso</p>
+            <p>20hs</p>
+            <a href="#">Ver detalle</a>
+        </div>
+        <div class="course-card">
+            <h4>Agregar un subtítulo</h4>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p><strong>$0000</strong></p>
+            <p>Nombre del curso</p>
+            <p>20hs</p>
+            <a href="#">Ver detalle</a>
+        </div>
+    </section>
 
-    <footer class="pie-pagina">
+    <!-- Footer -->
+    <footer>
         <p>Datos del Grupo</p>
     </footer>
 </body>
