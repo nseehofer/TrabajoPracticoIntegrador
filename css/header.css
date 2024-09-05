@@ -1,0 +1,24 @@
+.header {
+    display: flex;
+    border: 2px solid #0b0a0a;
+    justify-content: space-between;
+}
+
+.div_logo,
+.div_carrito,
+.div_barra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.barra {
+    width: 350px;
+    height: 25px;
+}
+
+.carrito{
+    height:60px;
+    width: 55px;
+}
