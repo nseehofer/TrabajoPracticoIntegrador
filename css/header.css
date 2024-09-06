@@ -1,24 +1,61 @@
+* {
+    font-family: 'Montserrat';
+    
+}
+
 .header {
+    border: none;
     display: flex;
-    border: 2px solid #0b0a0a;
+    background-color: white;
     justify-content: space-between;
+    height: 100px;
+    align-items: center;
+
 }
 
 .div_logo,
 .div_carrito,
 .div_barra {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 10px;
+    height: 40px;
 }
+
+.img-div-logo {
+    height: 50px;
+}
+
 
 .barra {
+    box-sizing: border-box;
     width: 350px;
-    height: 25px;
+    height: 40px;
+    align-items: center;
 }
 
-.carrito{
-    height:60px;
+.div_carrito {
+    height: 35px;
+}
+
+.carrito {
+    height: 60px;
     width: 55px;
 }
+
+.numero-carrito-fijo {
+    position: absolute;
+    top: 20px;
+    color: red;
+}
+
+.slider-principal,
+.img-slider-pincipal {
+    height: 520px;
+    object-fit: cover;
+    width: 100%;
+    object-position: center 20%;
+}
+
