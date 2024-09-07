@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/estilos.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/nav.css">
     <title>Pagina de Inicio</title>
     <!--ESTO ES EL LOGO QUE APARECERA EN NOMBRE DE LA PÁGINA-->
 
@@ -31,69 +32,66 @@
 
 <body>
 
-    <header class="header">
+    <header>
 
-
-        <div class="div_logo">
-            <a href="index.html">
-                <img src="images/LogoTest.png" class="img-div-logo" alt="Logo Aprender">
-            </a>
-        </div>
-        <div class="div_barra">
-            <input class="barra" type="text" list="cursos" placeholder="Buscar cursos" name="Buscador de cursos">
-            <datalist id="cursos">
-                <option value="curso 1">
-                <option value="curso 2">
-                <option value="curso 3">
-                <option value="curso 4">
-            </datalist>
-            <!--<button type="submit">Buscar</button>-->
-        </div>
-        <div class="div_carrito">
-            <img class="carrito" src="images/carritoDeCompras.png" alt="CarroDeCompras">
-            <span class="numero-carrito-fijo"><strong>2</strong></span>
-        </div>
-
-
-        <!--<nav class="container_items"> Esto es el Menú principal. Muestra los cursos
-            <div>
-                <ul class="items_lista">
-                    <li class="items">
-                        <a href="http://">
-                            <h4> Cursos </h4>
-                        </a>
-                        <ul>
-                            <li><a href="./html/curso1.html">Curso 1</a></li>
-                            <li><a href="./html/curso2.htm">Curso 2</a></li>
-                            <li><a href="./html/curso3.html">Curso 3</a></li>
-                            <li><a href="./html/curso4.html">Curso 4</a></li>
-                        </ul>
-                    </li>
-                    <li class="items">
-                        <a href="./html/forumlarioEmpresa.html">
-                            <h4> Empresas </h4>
-                        </a>
-
-                    </li>
-
-                    <li class="items">
-                        <a href="http://">
-                            <h4> Giftcard</h4>
-                        </a>
-                    </li>
-                    <li class="items">
-                        <a href="http://">
-                            <h4> Proximas fechas </h4>
-                        </a>
-                    </li>
-                </ul>
+        <div class="header">
+            <div class="div_logo">
+                <a href="index.html">
+                    <img src="images/LogoTest.png" class="img-div-logo" alt="Logo Aprender">
+                </a>
             </div>
-
-        </nav>
-    -->
+            <div class="div_barra">
+                <input class="barra" type="text" list="cursos" placeholder="Buscar cursos" name="Buscador de cursos">
+                <datalist id="cursos">
+                    <option value="curso 1">
+                    <option value="curso 2">
+                    <option value="curso 3">
+                    <option value="curso 4">
+                </datalist>
+                <!--<button type="submit">Buscar</button>-->
+            </div>
+            <div class="div_carrito">
+                <img class="carrito" src="images/carritoDeCompras.png" alt="CarroDeCompras">
+                <span class="numero-carrito-fijo"><strong>2</strong></span>
+            </div>
+        </div>
     </header>
+
+    <nav class="nav_menu">
+        <ul class="items_menu">
+            <li class="items">
+                <a href="http://">
+                    <h4> Cursos </h4>
+                </a>
+                <!--<ul>
+                        <--!<li><a href="./html/curso1.html">Curso 1</a></li>
+                        <li><a href="./html/curso2.htm">Curso 2</a></li>
+                        <li><a href="./html/curso3.html">Curso 3</a></li>
+                        <li><a href="./html/curso4.html">Curso 4</a></li>
+                    </ul>-->
+            </li>
+            <li class="items">
+                <a href="./html/forumlarioEmpresa.html">
+                    <h4> Empresas </h4>
+                </a>
+
+            </li>
+
+            <li class="items">
+                <a href="http://">
+                    <h4> Giftcard</h4>
+                </a>
+            </li>
+            <li class="items">
+                <a href="http://">
+                    <h4> Proximas fechas </h4>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
     <main>
-        <section style = "border: none;">
+        <section style="border: none;">
             <figure class="slider-principal">
                 <img class="img-slider-pincipal" src="./images/sliderImagen.jpeg" alt="imagen-slider-principal">
             </figure>

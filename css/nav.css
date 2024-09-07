@@ -1,0 +1,13 @@
+.items_menu,
+.items {
+    display: flex;
+    height: 50px;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+
+}
+
+a {
+    color: black;
+}
