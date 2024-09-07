@@ -1,0 +1,7 @@
+.slider-principal,
+.img-slider-pincipal {
+    height: 520px;
+    object-fit: cover;
+    width: 100%;
+    object-position: center 20%;
+}
