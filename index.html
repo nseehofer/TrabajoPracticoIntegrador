@@ -59,16 +59,17 @@
 
     <nav class="nav_menu">
         <ul class="items_menu">
-            <li class="items">
+            <li class="dropdown items">
                 <a href="http://">
-                    <h4> Cursos </h4>
+                    <h4>Cursos</h4>
                 </a>
-                <!--<ul>
-                        <--!<li><a href="./html/curso1.html">Curso 1</a></li>
-                        <li><a href="./html/curso2.htm">Curso 2</a></li>
-                        <li><a href="./html/curso3.html">Curso 3</a></li>
-                        <li><a href="./html/curso4.html">Curso 4</a></li>
-                    </ul>-->
+                <button class="dropbtn"> &#9662;</button>
+                <ul class="dropdown-content">
+                    <li class="content"><a href="./html/curso1.html">Curso 1</a></li>
+                    <li class="content"><a href="./html/curso2.htm">Curso 2</a></li>
+                    <li class="content"><a href="./html/curso3.html">Curso 3</a></li>
+                    <li class="content"><a href="./html/curso4.html">Curso 4</a></li>
+                </ul>
             </li>
             <li class="items">
                 <a href="./html/forumlarioEmpresa.html">
@@ -197,7 +198,16 @@
             </div>
         </div>
 
-
+        <!--<form>
+            <label for="carrera">Elige una carrera:</label>
+            <select style="opacity: 0; position: absolute; width: 100px; height: 30px;" id="carrera" name="carrera">
+                <option value="fullstack">Desarrollo Full Stack JavaScript</option>
+                <option value="frontend">Desarrollo Front End</option>
+                <option value="datascience">Data Science</option>
+                <option value="uxui">Diseño UX/UI</option>
+            </select>
+            <a>Hola</a>
+        </form>-->
 
 
     </footer>
