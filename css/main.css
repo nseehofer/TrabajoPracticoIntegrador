@@ -1,7 +1,18 @@
-.slider-principal,
-.img-slider-pincipal {
-    height: 470px;
-    object-fit: cover;
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.section-main-carrousel {
+    height: 50%;
     width: 100%;
-    object-position: center 20%;
+    overflow:hidden;
+    
+}
+.img-carrousel-pincipal {
+    height: 33rem;
+    width: 100%;
+    object-fit:cover;
+   
 }

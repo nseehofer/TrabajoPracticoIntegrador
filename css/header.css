@@ -1,46 +1,50 @@
-.header {
-    margin: 0;
+header {
     display: flex;
     background-color: white;
-    justify-content: space-between;
-    height: 100px;
     align-items: center;
-
+    height: 30%;
 }
 
-.div_logo,
-.div_carrito,
-.div_barra {
+a {
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    align-items: center;
-    padding: 10px;
-    height: 40px;
 }
 
-.img-div-logo {
-    height: 50px;
+.item-header {
+    display: flex;
+}
+
+.item-header-logo {
+    width: 25%;
+}
+
+.item-header-barra {
+    width: 60%;
+    justify-content: center;
+}
+
+.item-header-carrito {
+    width: 15%;
+    justify-content: center;
+}
+
+.logo {
+    width: 50%;
+}
+
+.img-carrito {
+    width: 28%;
 }
 
 .barra {
-    box-sizing: border-box;
-    width: 350px;
-    height: 40px;
-    align-items: center;
-}
-
-.div_carrito {
-    height: 35px;
-}
-
-.carrito {
-    height: 60px;
-    width: 55px;
+    width: 50%;
+    font-size: 100%;
+    padding: 0.5%;
+    margin-right: 20%;
 }
 
 .numero-carrito-fijo {
     position: absolute;
-    top: 20px;
-    color: red;
+    font-size: medium;
+    color: #0f787f;
 }

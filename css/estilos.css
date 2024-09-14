@@ -5,15 +5,4 @@
     text-decoration: none;
 }
 
-/*Ésta parte solo la use para que se vean bien las sepraciones del nav, header, footer etc.
- Despues la sacamos.
---------------------------------------------------------------------*/
-section,
-footer {
-    border: 2px solid #0b0a0a;
-}
 
-/*-----------------------------------------------------------*/
-li {
-    display: inline-flex
-}

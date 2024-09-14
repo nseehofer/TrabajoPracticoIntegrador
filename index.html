@@ -32,43 +32,43 @@
 
 <body>
 
-    <header>
+    <header class="header">
+        <figure class="item-header item-header-logo">
+            <a href="index.html">
+                <img src="images/LogoTest.png" class="logo" alt="Logo Aprender">
+            </a>
+        </figure>
+        <article class="item-header item-header-barra">
+            <input class="barra" type="text" list="cursos" placeholder="Buscar cursos" name="Buscador de cursos">
+            <datalist id="cursos">
+                <option value="curso 1">
+                <option value="curso 2">
+                <option value="curso 3">
+                <option value="curso 4">
+            </datalist>
+        </article>
 
-        <div class="header">
-            <div class="div_logo">
-                <a href="index.html">
-                    <img src="images/LogoTest.png" class="img-div-logo" alt="Logo Aprender">
-                </a>
-            </div>
-            <div class="div_barra">
-                <input class="barra" type="text" list="cursos" placeholder="Buscar cursos" name="Buscador de cursos">
-                <datalist id="cursos">
-                    <option value="curso 1">
-                    <option value="curso 2">
-                    <option value="curso 3">
-                    <option value="curso 4">
-                </datalist>
-                <!--<button type="submit">Buscar</button>-->
-            </div>
-            <div class="div_carrito">
-                <img class="carrito" src="images/carritoDeCompras.png" alt="CarroDeCompras">
-                <span class="numero-carrito-fijo"><strong>2</strong></span>
-            </div>
-        </div>
+        <figure class="item-header item-header-carrito">
+            <img class="img-carrito" src="images/carritoDeComprasColor.png" alt="CarroDeCompras">
+            <figcaption class="numero-carrito-fijo"><strong>2</strong></figcaption>
+        </figure>
     </header>
 
-    <nav class="nav_menu">
-        <ul class="items_menu">
-            <li class="dropdown items">
+    <nav class="nav-menu">
+        <!-- Estaba pensando agregar tipo una línea sombreada abajo del nav. Porque es toda blanca la página 
+         valen ya hizo un diseño en Canva, revisarlo-->
+        <ul class="nav-items-menu">
+            <li class="desplegable items item-principio">
                 <a href="http://">
                     <h4>Cursos</h4>
                 </a>
-                <button class="dropbtn"> &#9662;</button>
-                <ul class="dropdown-content">
-                    <li class="content"><a href="./html/curso1.html">Curso 1</a></li>
-                    <li class="content"><a href="./html/curso2.htm">Curso 2</a></li>
-                    <li class="content"><a href="./html/curso3.html">Curso 3</a></li>
-                    <li class="content"><a href="./html/curso4.html">Curso 4</a></li>
+
+                <button class="flecha-cursos"> &#9662;</button>
+                <ul class="contenedor-desplegable">
+                    <li class="contenido"><a href="./html/curso1.html">Curso 1</a></li>
+                    <li class="contenido"><a href="./html/curso2.htm">Curso 2</a></li>
+                    <li class="contenido"><a href="./html/curso3.html">Curso 3</a></li>
+                    <li class="contenido"><a href="./html/curso4.html">Curso 4</a></li>
                 </ul>
             </li>
             <li class="items">
@@ -83,32 +83,55 @@
                     <h4> Giftcard</h4>
                 </a>
             </li>
-            <li class="items">
+            <li class="items item-final">
                 <a href="http://">
                     <h4> Proximas fechas </h4>
                 </a>
             </li>
         </ul>
     </nav>
+    <div class="barra-degradada" ><img class = "img-degrade" src="./images/imagenDegradado.png" alt="detalle en degrade"></div>
 
-    <main>
-        <section style="border: none;">
-            <figure class="slider-principal">
-                <img class="img-slider-pincipal" src="./images/sliderImagen.jpeg" alt="imagen-slider-principal">
-            </figure>
+    <main class="main">
+        <section class="section-main-carrousel">
+            <!-- AGREGAR LAS FLECHAS QUE PUSO VALEN EN CANVA-->
+            <img class="img-carrousel-pincipal" src="./images/sliderImagen.jpeg" alt="imagen-slider-principal">
+
         </section>
-        <div class="pasos">
-            <img src="" alt="imagen del paso 1">
-            <P>PASO 1</P>
-        </div>
-        <div class="pasos">
-            <img src="" alt="imagen del paso 2">
-            <P>PASO 2</P>
-        </div>
-        <div class="pasos">
-            <img src="" alt="imagen del paso 3">
-            <P>PASO 3</P>
-        </div>
+        <section>
+            <div class="pasos">
+                <img src="" alt="imagen del paso 1">
+                <P>PASO 1</P>
+            </div>
+            <div class="pasos">
+                <img src="" alt="imagen del paso 2">
+                <P>PASO 2</P>
+            </div>
+            <div class="pasos">
+                <img src="" alt="imagen del paso 3">
+                <P>PASO 3</P>
+            </div>
+            <!--section{display:flex:
+justify-content:space-around; align-items:center;
+}
+div
+display:inline-block;
+height:100px; width:50px; align-items:center;
+background-color:red;
+}
+a{
+display: flex;
+justify-content: center. align-items:center; background-color: white; margin-top:40px;
+}
+</style>
+</head>
+<body>
+<section>>
+<div><a>Hola</a></div>
+<div><a>Como</a></div>
+<div><a>Estas</a></div>
+</section>
+</body>-->
         </section>
 
         <section>
@@ -119,6 +142,7 @@
                     <p>nombreCurso</p>
                     <p>duracion</p>
                     <p>precio</p>
+                    <p>presencial/virtual</p>
                     <button type="submit">Detalles del curso</button>
                 </div>
 
@@ -130,6 +154,7 @@
                     <p>nombreCurso</p>
                     <p>duracion</p>
                     <p>precio</p>
+                    <p>presencial/virtual</p>
                     <button type="submit">Detalles del curso</button>
             </article>
 
@@ -139,6 +164,7 @@
                     <p>nombreCurso</p>
                     <p>duracion</p>
                     <p>precio</p>
+                    <p>presencial/virtual</p>
                     <button type="submit">Detalles del curso</button>
             </article>
 
@@ -148,8 +174,56 @@
                     <p>nombreCurso</p>
                     <p>duracion</p>
                     <p>precio</p>
+                    <p>presencial/virtual</p>
                     <button>Detalles del curso</button>
             </article>
+
+            <!--
+<style>
+body{ display:flex; align-items: center;
+justify-content: space-around;
+}
+h1{
+display:flex; align-items: center;
+}
+section, article{
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+section(
+background-color: #FOFOFO;
+height: 400px;
+width: 1510px;
+}
+article (
+flex-direction: column;
+height: 380px;
+border: 4px solid yellow;
+a(
+display: inline-flex; width: 375px;
+height: 40px; justify-content: center; align-content space-around:
+</style>
+</head>
+<body>
+<h1>Cursos destacados</h1>
+<section> <article>
+<h3 style="display:flex">Diseño UX/UI</h3> <a style="color:black; justify-content flex-start;">Asi asdjoajsdoiajsodasda jaiosida asidoiasi asjasida c asdfoakm</a>
+<a style="color:black; justify-content flex-end;">< <a style="color:black; justify-content:flex-start;"> <a style="color: #OF787F: justify-content flex-end," </article>
+<article>
+<a>Explicacion 1</a>
+<a>Explicacion 2</a>
+<a>Explicacion 3</a>
+</article>
+<article>
+<a>Explicacion 1</a>
+<a-Explicacion 2</a>
+<a>Explicacion 3</a>
+</article>
+</section>
+</body>
+
+-->
         </section>
 
         <section>
