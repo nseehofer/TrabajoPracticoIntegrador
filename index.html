@@ -90,144 +90,110 @@
             </li>
         </ul>
     </nav>
-    <div class="barra-degradada" ><img class = "img-degrade" src="./images/imagenDegradado.png" alt="detalle en degrade"></div>
+    <!-- BARRA DEGRADE -->
+    <div class="barra-degradada"><img class="img-degrade" src="./images/imagenDegradado.png" alt="detalle en degrade">
+    </div>
 
     <main class="main">
+        <!-- SECCION CARROUSEL -->
         <section class="section-main-carrousel">
-            <!-- AGREGAR LAS FLECHAS QUE PUSO VALEN EN CANVA-->
-            <img class="img-carrousel-pincipal" src="./images/sliderImagen.jpeg" alt="imagen-slider-principal">
-
+            <img class="img-carrousel-pincipal" src="./images/sliderImagen.jpeg" alt="imagen-carrousel-principal">
+            <img class="img-flecha-carrousel-izquierda" src="./images/FlechaIzquierda.png" alt="flechas-carrousel">
+            <img class="img-flecha-carrousel-derecha" src="./images/FlechaDerecha.png" alt="flechas-carrousel">
         </section>
-        <section>
-            <div class="pasos">
-                <img src="" alt="imagen del paso 1">
-                <P>PASO 1</P>
-            </div>
-            <div class="pasos">
-                <img src="" alt="imagen del paso 2">
-                <P>PASO 2</P>
-            </div>
-            <div class="pasos">
-                <img src="" alt="imagen del paso 3">
-                <P>PASO 3</P>
-            </div>
-            <!--section{display:flex:
-justify-content:space-around; align-items:center;
-}
-div
-display:inline-block;
-height:100px; width:50px; align-items:center;
-background-color:red;
-}
-a{
-display: flex;
-justify-content: center. align-items:center; background-color: white; margin-top:40px;
-}
-</style>
-</head>
-<body>
-<section>>
-<div><a>Hola</a></div>
-<div><a>Como</a></div>
-<div><a>Estas</a></div>
-</section>
-</body>-->
-        </section>
+        <!-- SECCION TUTORIAL -->
+        <section class="section-main-tutorial">
 
-        <section>
-            <h3>CURSOS DESTACADOS</h3>
-            <article>
-                <div class="curso">
-                    <img src="" alt="">
-                    <p>nombreCurso</p>
-                    <p>duracion</p>
-                    <p>precio</p>
-                    <p>presencial/virtual</p>
-                    <button type="submit">Detalles del curso</button>
+            <article class="elementos-del-tutorial article-tutorial-titulo">
+                <h2 class="tutorial-titulo">Inscripcion</h2>
+                <h3 class="tutorial-titulo">Pasos a seguir</h3>
+            </article>
+
+            <article class="elementos-del-tutorial article-tutorial">
+                <div class="div-tutorial">
+                    <!--NO PUEDO ENTENDER PORQUE ESTE ME QUEDA ALGO CORRIDO HACIA LA IZQUIERDA-->
+                    <img class="img-paso-tutorial paso-uno" src="./images/primerPaso.png" alt="primer paso inscripcion">
+                    <div class="tutorial-descripcion">
+                        <h5>Iniciar sesion</h5>
+                        <p>Si aun no tenes cuenta</p>
+                        <p>necesitas <a class="vinculo-div-tutorial" href="http://">registrarte</a></p>
+                    </div>
                 </div>
 
+                <div class="div-tutorial">
+                    <img class="img-paso-tutorial paso-dos" src="./images/segundoPaso.png"
+                        alt="segundo paso inscripcion">
+                    <div class="tutorial-descripcion">
+                        <h5>Elegir curso</h5>
+                        <p>Ver la <a class="vinculo-div-tutorial" href="http://">oferta</a></p>
+                    </div>
+                </div>
+
+                <div class="div-tutorial">
+                    <img class="img-paso-tutorial paso-tres" src="./images/tercerPaso.png"
+                        alt="tercer paso inscripcion">
+                    <div class="tutorial-descripcion">
+                        <h5>Inscribirse</h5>
+                        <p>Completar el formulario</p>
+                    </div>
+                </div>
             </article>
 
-            <article>
-                <div class="curso">
-                    <img src="" alt="">
-                    <p>nombreCurso</p>
-                    <p>duracion</p>
-                    <p>precio</p>
-                    <p>presencial/virtual</p>
-                    <button type="submit">Detalles del curso</button>
+        </section>
+
+        <section class="section-main-cursos-destacados">
+            <p class="titulo-cursos-destacados"> Cursos Destacados</p>
+
+            <article class="article-cursos-destacados">
+                <div class="div-curso-destacado">
+                    <figure class="bloque-curso-destacado"><img class="imagen-curso-destacado" src="./images/uxui.png" alt="curso de experiencia e interfaz de usuario">
+                        <figcaption><a class="vinculo-detalle-curso" href="http://">Ver Detalle</a></figcaption>
+                    </figure>
+                    <div class="bloque-curso-destacado">
+                        <div>
+                            <p class="titulo-curso">Diseño UX/UI</p>
+                            <p>Lonioasdmpa asdasdasd
+                                adasdasda kfopdskf ksdof
+                                sdfsdokopf ksod sdkofps</p>
+                        </div>
+                        <div class="particion-datos-curso">
+                            <div class="primer-particion">
+                                <p><strong>15 horas</strong></p>
+                                <p><strong>$0000</strong></p>
+                            </div>
+                            <div class="segunda-particion">
+                                <p>VIRTUAL</p>
+                                <button class="boton-comprar-curso" type="submit">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="div-curso-destacado">
+                    <figure class="bloque-curso-destacado"> <img class="imagen-curso-destacado" src="./images/ciberseguridad.png" alt="curso de ciberseguridad">
+                        <figcaption><a class="vinculo-detalle-curso" href="http://">Ver Detalle</a></figcaption>
+                    </figure>
+                    <div class="bloque-curso-destacado">
+                        <div>
+                            <p class="titulo-curso">Ciberseguridad</p>
+                            <p>Lonioasdmpa asdasdasd
+                                adasdasdakfopdskf ksdof
+                                sdfsdokopf ksod sdkofps</p>
+                        </div>
+                        <div class="particion-datos-curso">
+                            <div class="primer-particion">
+                                <p><strong>20 horas</strong></p>
+                                <p><strong>$0000</strong></p>
+                            </div>
+                            <div class="segunda-particion">
+                                <p>VIRTUAL</p>
+                                <button class="boton-comprar-curso" type="submit">Comprar</button>
+                            </div>
+                        </div>
             </article>
-
-            <article>
-                <div class="curso">
-                    <img src="" alt="">
-                    <p>nombreCurso</p>
-                    <p>duracion</p>
-                    <p>precio</p>
-                    <p>presencial/virtual</p>
-                    <button type="submit">Detalles del curso</button>
-            </article>
-
-            <article>
-                <div class="curso">
-                    <img src="" alt="">
-                    <p>nombreCurso</p>
-                    <p>duracion</p>
-                    <p>precio</p>
-                    <p>presencial/virtual</p>
-                    <button>Detalles del curso</button>
-            </article>
-
-            <!--
-<style>
-body{ display:flex; align-items: center;
-justify-content: space-around;
-}
-h1{
-display:flex; align-items: center;
-}
-section, article{
-display: flex;
-align-items: center;
-justify-content: space-around;
-}
-section(
-background-color: #FOFOFO;
-height: 400px;
-width: 1510px;
-}
-article (
-flex-direction: column;
-height: 380px;
-border: 4px solid yellow;
-a(
-display: inline-flex; width: 375px;
-height: 40px; justify-content: center; align-content space-around:
-</style>
-</head>
-<body>
-<h1>Cursos destacados</h1>
-<section> <article>
-<h3 style="display:flex">Diseño UX/UI</h3> <a style="color:black; justify-content flex-start;">Asi asdjoajsdoiajsodasda jaiosida asidoiasi asjasida c asdfoakm</a>
-<a style="color:black; justify-content flex-end;">< <a style="color:black; justify-content:flex-start;"> <a style="color: #OF787F: justify-content flex-end," </article>
-<article>
-<a>Explicacion 1</a>
-<a>Explicacion 2</a>
-<a>Explicacion 3</a>
-</article>
-<article>
-<a>Explicacion 1</a>
-<a-Explicacion 2</a>
-<a>Explicacion 3</a>
-</article>
-</section>
-</body>
-
--->
         </section>
 
         <section>
-            <H3>MEDIOS DE PAGO</H3>
+            <H4>MEDIOS DE PAGO</H4>
             <div class="slider_medios_de_pago">
                 <div>
                     <img src="" alt="">
