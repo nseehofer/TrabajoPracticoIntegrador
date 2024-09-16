@@ -29,7 +29,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    padding: 1em;
+    padding: 0.5em;
     width: 100%;
     background-color: white; 
     z-index: 1000; 
@@ -75,6 +75,8 @@ header {
     border-radius: 2em;
     padding: 4px 1em;
     border: none;
+max-width: 70%;
+
 }
 
 
@@ -82,6 +84,7 @@ header {
     background-color: var(--azul);
     font-size: 1.2em;
 }
+
 .btn-azul:hover {
     cursor: pointer;
     background-color: var(--amarillo);
@@ -89,11 +92,9 @@ header {
 
 
 .btn-formularios {
-    width: 40%;
-    margin-top: 1em;
-    display: inline-block;
-    white-space: nowrap;
-    min-width: 10rem;
+    display: flex;
+    justify-content: center;
+    margin: 1em auto; 
 }
 
 .Formulario {
@@ -103,23 +104,24 @@ header {
     height: 100%;
     width: 100%;
     padding: 1em;
+    margin-top: 2em;
 }
 
 
 
 form {
     width: 100%;
-    max-width: 400px; /* Ajusta el ancho máximo del formulario */
+    max-width: 500px; 
     display: flex;
     flex-direction: column;
-    align-items: center;
+
 }
 
 h1 {
     color: var(--azul);
     font-weight: bold;
     text-align: center;
-    font-size: 3em;
+    font-size: 2.2em; 
     margin-bottom: 0.7em;
     white-space: nowrap;
 }
@@ -128,20 +130,20 @@ label {
     color: var(--azul);
     display: block;
     margin-bottom: 0.5em;
-    font-size: 1.1em;
+    font-size: 1em; 
     flex-wrap: nowrap;
 }
-
 
 input {
     border: 1px solid var(--amarillo); 
     border-radius: 1em;
-    padding: 0.8em; /* Ajusta el padding de los inputs */
-    height: 2.2em;  /* Ajusta la altura de los inputs */
+    padding: 0.6em; 
+    height: 2.2em;  
     width: 100%;
     margin-bottom: 1em;
-    font-size: 1em;  /* Reduce ligeramente el tamaño de la fuente */
-    min-width: 0;    /* Elimina el ancho mínimo */
+    font-size: 1em;  
+    min-width: 0;  
+    align-items: center;
 }
 
 input::placeholder {
@@ -150,20 +152,19 @@ input::placeholder {
 }
 
 input:focus {
-    border-color: #0f787f; /* Cambia el color del borde cuando el input está enfocado */
+    border-color: #0f787f; 
     outline: none;
 }
 
 button {
-    width: 100%;  /* Ajusta el ancho del botón al 100% del formulario */
-    max-width: 200px;
+    width: 100%; 
     padding: 0.8em;
 }
+
 #texto-InicioSesion {
     font-size: 0.8em;
     margin-top: 1em;
     text-align: center;
-    margin-bottom: 2em;
 }
 
 #texto-InicioSesion a {
@@ -174,5 +175,3 @@ button {
 #texto-InicioSesion a:hover {
     text-decoration: underline;
 }
-
-/* Header */
