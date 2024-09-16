@@ -65,6 +65,10 @@ h3 {
     color: #0f787f;
 }
 
+.descripcion-paso-uno {
+    padding-left: 3%;
+}
+
 .div-tutorial {
     display: flex;
     flex-direction: column;
@@ -124,7 +128,7 @@ h5 {
 .div-curso-destacado {
     display: flex;
     background-color: #f0f0f0;
-    border-radius: 2rem;    
+    border-radius: 2rem;
     height: 18rem;
     margin: 2%;
     width: 50%;
@@ -143,7 +147,7 @@ h5 {
     width: 50%;
     height: 90%;
     margin: 2%;
-    
+
 }
 
 .particion-datos-curso {
@@ -180,7 +184,7 @@ h5 {
     padding: 1%;
 }
 
-.imagen-curso-destacado{
+.imagen-curso-destacado {
     height: 80%;
     width: 100%;
     border-radius: 2rem;
@@ -191,18 +195,20 @@ h5 {
     align-items: center;
     justify-content: center;
 }
+
 .circulo {
     background-color: #0f787f;
     border-radius: 50%;
     margin: 0 10px;
 }
+
 .circulo.pequenio {
     width: 1rem;
     height: 1rem;
     background-color: #a1dbdb;
 }
 
-.circulo.medio{
+.circulo.medio {
     width: 1.5rem;
     height: 1.5rem;
     background-color: #a1dbdb;
@@ -215,49 +221,57 @@ h5 {
 
 /*MEDIOS DE PAGO*/
 
-.section-medios-de-pago{
-    display:flex;
+.section-medios-de-pago {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    height:20rem;
+    height: 20rem;
     justify-content: space-between;
     margin-top: 10%;
     margin-bottom: 10%;
 }
 
-.article-titulo-medio-de-pago{
-display:flex;
-height:30%;
-align-items: center;
+.article-titulo-medio-de-pago {
+    display: flex;
+    height: 30%;
+    align-items: center;
 }
 
-.titulo-medio-de-pago{
+.titulo-medio-de-pago {
     font-weight: bold;
     font-size: xx-large;
 }
 
-.contenedor-carrousel-medio-de-pago{
-    display:flex;
+.contenedor-carrousel-medio-de-pago {
+    display: flex;
     align-items: center;
     justify-content: space-around;
     width: 100%;
     height: 65%;
 }
 
-.items-medio-de-pago{
+.items-medio-de-pago {
+    display: flex;
+    align-items: center;
     width: 12%;
     height: 80%;
-    background: #F0F0F0;
     border-radius: 2rem;
-}
-
-.flecha{
-    display:flex;
-    background:white;
     justify-content: center;
-    align-items:center;
+    background-color: #f0f0f0;
 }
 
-.img-flecha-carrousel-MdPago{
+.img-MdPago {
+    width: 90%;
+
+}
+
+.flecha {
+    display: flex;
+    background: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-flecha-carrousel-MdPago {
     width: 50%;
 }
