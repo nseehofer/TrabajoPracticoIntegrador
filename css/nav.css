@@ -3,7 +3,10 @@ nav{
     justify-content:space-between;
     list-style:none;
     align-items: center;
+    background-color: white;
+    box-shadow: 1px 13px 20px 0px rgba(0, 0, 0, 0.1);
 }
+
 
 ul,li {
     display:flex;
