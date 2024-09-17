@@ -5,9 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/nav.css">
     <title>Pagina de Inicio</title>
     <!--ESTO ES EL LOGO QUE APARECERA EN NOMBRE DE LA PÁGINA-->
-  
+
     <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
@@ -28,165 +31,231 @@
 </head>
 
 <body>
-  
-    <header >
-        <div class="logo_principal">
-            <a href="index.html"> 
-                <img src="images/LogoTest.png" style="height:50px"
-                        alt="Logo Aprender">
-                    </a>
-                </div>
-                <div class=" barra_buscadora">
-                    <input type="search" list="cursos" placeholder="Buscar" name="Buscador">
-                         <datalist>
-                            <option value="curso 1">
-                                <option value="curso 2">
-                                    <option value="curso 3">
-                                        <option value="curso 4">
-                         </datalist>
-                         <button type="submit">Buscar</button>
-                         </div>
-                <div class="logo_carrito">
-                                <img src="images/carritoDeCompras.png" style="height:30px" alt="CarroDeCompras">
-                        </div>
-        <nav> <!--Esto es el Menú principal. Muestra los cursos-->
-               <div class="container_items">
-                <ul class="items_lista">
-                    <li class="items">
-                        <a href="http://"><h4> Cursos </h4></a>
-                        <ul>
-                            <li><a href="./html/curso1.html">Curso 1</a></li>
-                            <li><a href="./html/curso2.htm"l>Curso 2</a></li>
-                            <li><a href="./html/curso3.html">Curso 3</a></li>
-                            <li><a href="./html/curso4.html">Curso 4</a></li>
-                        </ul>
-                        </li>
-                    <li class="items">
-                        <a href="./html/forumlarioEmpresa.html"><h4> Empresas </h4></a>
-                    
-                    </li>
 
-                    <li class="items">
-                        <a href="http://"><h4> Giftcard</h4></a>
-                    </li>
-                    <li class="items">
-                        <a href="http://"> <h4> Proximas fechas </h4> </a>
-                    </li>
-                </ul>
-               </div>          
-           
-        </nav>
+    <header class="header">
+        <figure class="item-header item-header-logo">
+            <a href="index.html">
+                <img src="images/LogoTest.png" class="logo" alt="Logo Aprender">
+            </a>
+        </figure>
+        <article class="item-header item-header-barra">
+            <input class="barra" type="text" list="cursos" placeholder="Buscar cursos" name="Buscador de cursos">
+            <datalist id="cursos">
+                <option value="curso 1">
+                <option value="curso 2">
+                <option value="curso 3">
+                <option value="curso 4">
+            </datalist>
+        </article>
+
+        <figure class="item-header item-header-carrito">
+            <img class="img-carrito" src="images/carritoDeComprasColor.png" alt="CarroDeCompras">
+            <figcaption class="numero-carrito-fijo"><strong>2</strong></figcaption>
+        </figure>
     </header>
-    <main>
-    <div class="slider_principal">
-        <img src="" alt="imagen de promocion" srcset="">
-    </div>
-    <section>
-           <div class="pasos">
-            <img src="" alt="imagen del paso 1">
-               <P>PASO 1</P>
-           </div>
-           <div class="pasos">
-            <img src="" alt="imagen del paso 2">
-            <P>PASO 2</P>
-           </div>
-           <div class="pasos">
-            <img src="" alt="imagen del paso 3">
-            <P>PASO 3</P>
-           </div>
-    </section>
- 
-    <section>
-        <h3>CURSOS DESTACADOS</h3>
-        <article>
-            <div  class="curso">
-            <img src="" alt="">
-            <p>nombreCurso</p>
-            <p>duracion</p>
-            <p>precio</p>
-        <button type="submit">Detalles del curso</button>
-    </div>
 
-        </article>
+    <nav class="nav-menu">
+        <!-- Estaba pensando agregar tipo una línea sombreada abajo del nav. Porque es toda blanca la página 
+         valen ya hizo un diseño en Canva, revisarlo-->
+        <ul class="nav-items-menu">
+            <li class="desplegable items item-principio">
+                <a href="http://">
+                    <h4>Cursos</h4>
+                </a>
 
-        <article>
-            <div  class="curso">
-                <img src="" alt="">
-                <p>nombreCurso</p>
-                <p>duracion</p>
-                <p>precio</p>
-            <button type="submit">Detalles del curso</button>
-        </article>
+                <button class="flecha-cursos"> &#9662;</button>
+                <ul class="contenedor-desplegable">
+                    <li class="contenido"><a href="./html/curso1.html">Curso 1</a></li>
+                    <li class="contenido"><a href="./html/curso2.htm">Curso 2</a></li>
+                    <li class="contenido"><a href="./html/curso3.html">Curso 3</a></li>
+                    <li class="contenido"><a href="./html/curso4.html">Curso 4</a></li>
+                </ul>
+            </li>
+            <li class="items">
+                <a href="./html/forumlarioEmpresa.html">
+                    <h4> Empresas </h4>
+                </a>
 
-        <article>
-            <div  class="curso">
-                <img src="" alt="">
-                <p>nombreCurso</p>
-                <p>duracion</p>
-                <p>precio</p>
-            <button type="submit">Detalles del curso</button>
-        </article>
+            </li>
 
-        <article>
-            <div  class="curso">
-                <img src="" alt="">
-                <p>nombreCurso</p>
-                <p>duracion</p>
-                <p>precio</p>
-            <button>Detalles del curso</button>
-        </article>
-    </section>
+            <li class="items">
+                <a href="http://">
+                    <h4> Giftcard</h4>
+                </a>
+            </li>
+            <li class="items item-final">
+                <a href="http://">
+                    <h4> Proximas fechas </h4>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- BARRA DEGRADE -->
+    <main class="main">
+        <!-- SECCION CARROUSEL -->
+        <section class="section-main-carrousel">
+            <img class="img-carrousel-pincipal" src="./images/sliderImagen.jpeg" alt="imagen-carrousel-principal">
+            <img class="img-flecha-carrousel-izquierda" src="./images/FlechaIzquierda.png" alt="flechas-carrousel">
+            <img class="img-flecha-carrousel-derecha" src="./images/FlechaDerecha.png" alt="flechas-carrousel">
+        </section>
+        <!-- SECCION TUTORIAL -->
+        <section class="section-main-tutorial">
 
-<section>
-    <H3>MEDIOS DE PAGO</H3>
-<div class="slider_medios_de_pago">
-    <div>
-        <img src="" alt="" >
-        <a href="http://"> credito/debito</a>
-       </div>
-    <div>
-        <img src="" alt="" >
-        <a href="http://">mercadoPago</a>
-    </div>
-    <div>
-        <img src="" alt="" >
-        <a href="http://">rapipago</a>
-        </div>
-    <div>
-        <img src="" alt="" >
-        <a href="http://">paypal</a>
-        </div>
-</div>
+            <article class="elementos-del-tutorial article-tutorial-titulo">
+                <h2 class="tutorial-titulo">Inscripcion</h2>
+                <h3 class="tutorial-titulo">Pasos a seguir</h3>
+            </article>
 
-</section>
-</main>
-<footer>
+            <article class="elementos-del-tutorial article-tutorial">
+                <div class="div-tutorial">
+                    <!--NO PUEDO ENTENDER PORQUE ESTE ME QUEDA ALGO CORRIDO HACIA LA IZQUIERDA-->
+                    <img class="img-paso-tutorial paso-uno" src="./images/primerPaso.png" alt="primer paso inscripcion">
+                    <div class="tutorial-descripcion descripcion-paso-uno">
+                        <h5>Iniciar sesion</h5>
+                        <p>Si aun no tenes cuenta</p>
+                        <p>necesitas <a class="vinculo-div-tutorial" href="http://">registrarte</a></p>
+                    </div>
+                </div>
+
+                <div class="div-tutorial">
+                    <img class="img-paso-tutorial paso-dos" src="./images/segundoPaso.png"
+                        alt="segundo paso inscripcion">
+                    <div class="tutorial-descripcion">
+                        <h5>Elegir curso</h5>
+                        <p>Ver la <a class="vinculo-div-tutorial" href="http://">oferta</a></p>
+                    </div>
+                </div>
+
+                <div class="div-tutorial">
+                    <img class="img-paso-tutorial paso-tres" src="./images/tercerPaso.png"
+                        alt="tercer paso inscripcion">
+                    <div class="tutorial-descripcion">
+                        <h5>Inscribirse</h5>
+                        <p>Completar el formulario</p>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+
+        <section class="section-main-cursos-destacados">
+            <p class="titulo-cursos-destacados"> Cursos Destacados</p>
+
+            <article class="article-cursos-destacados">
+                <div class="div-curso-destacado">
+                    <figure class="bloque-curso-destacado"><img class="imagen-curso-destacado" src="./images/uxui.png"
+                            alt="curso de experiencia e interfaz de usuario">
+                        <figcaption><a class="vinculo-detalle-curso" href="http://">Ver Detalle</a></figcaption>
+                    </figure>
+                    <div class="bloque-curso-destacado">
+                        <div>
+                            <p class="titulo-curso">Diseño UX/UI</p>
+                            <p>Lonioasdmpa asdasdasd
+                                adasdasda kfopdskf ksdof
+                                sdfsdokopf ksod sdkofps</p>
+                        </div>
+                        <div class="particion-datos-curso">
+                            <div class="primer-particion">
+                                <p><strong>15 horas</strong></p>
+                                <p><strong>$0000</strong></p>
+                            </div>
+                            <div class="segunda-particion">
+                                <p>VIRTUAL</p>
+                                <button class="boton-comprar-curso" type="submit">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="div-curso-destacado">
+                    <figure class="bloque-curso-destacado"> <img class="imagen-curso-destacado"
+                            src="./images/ciberseguridad.png" alt="curso de ciberseguridad">
+                        <figcaption><a class="vinculo-detalle-curso" href="http://">Ver Detalle</a></figcaption>
+                    </figure>
+                    <div class="bloque-curso-destacado">
+                        <div>
+                            <p class="titulo-curso">Ciberseguridad</p>
+                            <p>Lonioasdmpa asdasdasd
+                                adasdasdakfopdskf ksdof
+                                sdfsdokopf ksod sdkofps</p>
+                        </div>
+                        <div class="particion-datos-curso">
+                            <div class="primer-particion">
+                                <p><strong>20 horas</strong></p>
+                                <p><strong>$0000</strong></p>
+                            </div>
+                            <div class="segunda-particion">
+                                <p>VIRTUAL</p>
+                                <button class="boton-comprar-curso" type="submit">Comprar</button>
+                            </div>
+                        </div>
+            </article>
+            <div class="contenedor-circulo">
+                <div class="circulo pequenio"></div>
+                <div class="circulo medio"></div>
+                <div class="circulo grande"></div>
+                <div class="circulo medio"></div>
+                <div class="circulo pequenio"></div>
+            </div>
+        </section>
+        <!-- SECCION MEDIOS DE PAGO -->
+        <section class="section-medios-de-pago">
+            <article class="article-titulo-medio-de-pago">
+                <p class="titulo-medio-de-pago">Medios de pago</p>
+            </article>
+
+            <article class="contenedor-carrousel-medio-de-pago">
+                <figure class="items-medio-de-pago flecha">
+                    <img class="img-flecha-carrousel-MdPago" src="images/FlechaIzquierdaCarrouselMdPagos.png"
+                        alt="direcionar el carrousel de medios de pagos hacia la izquierda">
+                </figure>
+
+                <figure class="items-medio-de-pago">
+                    <img class="img-MdPago" src="./images/TcoTd.png" alt="medio de pago tarjeta debito y credito">       
+                </figure>
+
+                <figure class="items-medio-de-pago">
+                    <img class="img-MdPago" src="./images/mpago.png" alt="medio de pago merdcado pago">
+                </figure>
+
+                <figure class="items-medio-de-pago">
+                    <img class="img-MdPago" src="./images/rapipago.png" alt="medio de pago rapipago">                    
+                </figure>
+
+                <figure class="items-medio-de-pago">
+                    <img class="img-MdPago" src="./images/paypal.png" alt="medio de pago paypal">
+                </figure>
+
+                <figure class="items-medio-de-pago flecha">
+                    <img class="img-flecha-carrousel-MdPago" src="images/FlechaDerechaCarrouselMdPagos.png"
+                        alt="direcionar el carrousel de medios de pagos hacia la derecha">
+                </figure>
+            </article>
+
+        </section>
+    </main>
+    <footer>
 
         <div class="columna_footer">
-         <h4>nombre de nuestro grupo</h4>
-         <p>integrante 1 + dni</p>
-         <p>integrante 2 + dni</p>
-         <p>integrante 3 + dni</p>
-         <p>integrante 4 + dni</p>
+            <h4>nombre de nuestro grupo</h4>
+            <p>integrante 1 + dni</p>
+            <p>integrante 2 + dni</p>
+            <p>integrante 3 + dni</p>
+            <p>integrante 4 + dni</p>
         </div>
 
         <div class="columna_footer">
 
             <div class="menu_inferior">
-    
+
                 <a class="items_inferiores" href="">Terminos y condiciones</a>
-      
+
                 <a class="items_inferiores" href="">Politicas de privacidad</a>
-       
+
                 <a class="items_inferiores" href="">Quiénes somos</a>
-     
+
             </div>
         </div>
-      
-
-
-
-</footer>
+    </footer>
 
 </body>
 
