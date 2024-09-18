@@ -4,22 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalle del Curso</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="../css/estilos_detalle_curso.css">
 </head>
 <body>
-    <!-- Header -->
+    <!-- Header con logo y carrito de compras -->
     <header class="header">
-        <div class="logo">
-            <a href="#"><img src="../images/LogoTest.png" class="logo" alt="Logo"></a>
-        </div>
-        <div class="search-bar">
-            <input type="text" placeholder="Buscar...">
-            <button><img src="../images/icon_search.png" class="carrito" alt="Buscar"></button>
-        </div>
-        <div class="cart">
-            <a href="#"><img src="../images/carritoDeCompras.png" class="carrito"></span></a>
-        </div>
+        <figure class="item-header item-header-logo">
+            <a href="index.html">
+                <img src="../images/LogoTest.png" class="logo" alt="Logo Aprender">
+            </a>
+        </figure>
+        <article class="item-header item-header-barra">
+            <input class="barra" type="text" list="cursos" placeholder="Buscar cursos" name="Buscador de cursos">
+            <datalist id="cursos">
+                <option value="curso 1">
+                <option value="curso 2">
+                <option value="curso 3">
+                <option value="curso 4">
+            </datalist>
+        </article>
+
+        <figure class="item-header item-header-carrito">
+            <img class="img-carrito" src="../images/carritoDeComprasColor.png" alt="CarroDeCompras">
+            <figcaption class="numero-carrito-fijo"><strong>2</strong></figcaption>
+        </figure>
     </header>
+
+    <!-- Navegación principal -->
+    <nav class="nav-menu">
+        <ul class="nav-items-menu">
+            <li class="desplegable items item-principio">
+                <a href="http://">
+                    <h4>Cursos</h4>
+                </a>
+                <button class="flecha-cursos"> &#9662;</button>
+                <ul class="contenedor-desplegable">
+                    <li class="contenido"><a href="../html/curso1.html">Curso 1</a></li>
+                    <li class="contenido"><a href="../html/curso2.htm">Curso 2</a></li>
+                    <li class="contenido"><a href="../html/curso3.html">Curso 3</a></li>
+                    <li class="contenido"><a href="../html/curso4.html">Curso 4</a></li>
+                </ul>
+            </li>
+            <li class="items">
+                <a href="../html/forumlarioEmpresa.html">
+                    <h4> Empresas </h4>
+                </a>
+            </li>
+            <li class="items">
+                <a href="http://">
+                    <h4> Giftcard</h4>
+                </a>
+            </li>
+            <li class="items item-final">
+                <a href="http://">
+                    <h4> Proximas fechas </h4>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Volver -->
+    <a href="#" class="volver"> &#x2190; Volver </a>
 
     <!-- Detalle del curso -->
     <section class="course-details">
@@ -27,81 +76,67 @@
             <img src="curso-imagen.png" alt="Imagen del Curso">
         </div>
         <div class="course-info">
-            <h2>Diseñador UX/UI</h2>
+            <h2>Título del curso</h2>
             <p><strong>Valor:</strong> $0000</p>
+            <p><strong>Modalidad:</strong> Virtual</p>
             <p><strong>Duración:</strong> 13 meses</p>
-            <p><strong>Descripción:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</p>
-            <p><strong>Requisitos previos:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p><strong>Requisitos previos:</strong> asdasdakfopdskfksdof</p>
+            <p><strong>Descripción:</strong> Lonioasdmpafgdfgfgdfg</p>
             <button class="inscribirse">Inscribirse</button>
         </div>
     </section>
 
-    <!-- Contenidos por clase -->
-    <section class="class-contents">
-        <h3>Contenidos por clase</h3>
-        <ul>
-            <li>Módulo 1 - Introducción</li>
-            <li>Módulo 2 - Fundamentos de UX/UI</li>
-            <li>Módulo 3 - Herramientas de Diseño</li>
-            <li>Módulo 4 - Prototipado y Testeo</li>
-            <li>Módulo 5 - Proyecto Final</li>
-        </ul>
-    </section>
+    <!-- Contenidos por clase e Instructor -->
+    <div class="content-instructor">
+        <section class="class-contents">
+            <h3>Contenidos por clase</h3>
+            <details>
+                <summary>MÓDULO 1</summary>
+                <p>Contenido 1</p>
+            </details>
+            <details>
+                <summary>MÓDULO 2</summary>
+                <p>Contenido 2</p>
+            </details>
+            <details>
+                <summary>MÓDULO 3</summary>
+                <p>Contenido 3</p>
+            </details>
+            <details>
+                <summary>MÓDULO 4</summary>
+                <p>Contenido 4</p>
+            </details>
+        </section>
 
-    <!-- Detalles del docente -->
-    <section class="teacher-info">
-        <div class="teacher-photo">
-            <img src="docente.png" alt="Foto del docente">
-        </div>
-        <div class="teacher-details">
+        <section class="instructor-info">
+            <img src="instructor.png" alt="Instructor">
             <h3>Juan Garay</h3>
-            <div class="rating">
-                <span>★★★★★</span>
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac feugiat eros.</p>
-        </div>
-    </section>
+            <span>★★★★★</span>
+        </section>
+    </div>
 
     <!-- Cursos relacionados -->
     <section class="related-courses">
         <h3>Cursos relacionados</h3>
         <div class="course-card">
-            <h4>Agregar un subtítulo</h4>
-            <p>Lorem ipsum dolor sit amet.</p>
-            <p><strong>$0000</strong></p>
-            <p>Nombre del curso</p>
-            <p>20hs</p>
-            <a href="#">Ver detalle</a>
+            <h4>Titulo Curso</h4>
+            <p>Lorem ipsum dolor sit.</p>
+            <p>$0000</p>
+            <p>20 horas</p>
+            <a href="#">Ver Detalle</a>
         </div>
         <div class="course-card">
-            <h4>Agregar un subtítulo</h4>
-            <p>Lorem ipsum dolor sit amet.</p>
-            <p><strong>$0000</strong></p>
-            <p>Nombre del curso</p>
-            <p>20hs</p>
-            <a href="#">Ver detalle</a>
-        </div>
-        <div class="course-card">
-            <h4>Agregar un subtítulo</h4>
-            <p>Lorem ipsum dolor sit amet.</p>
-            <p><strong>$0000</strong></p>
-            <p>Nombre del curso</p>
-            <p>20hs</p>
-            <a href="#">Ver detalle</a>
-        </div>
-        <div class="course-card">
-            <h4>Agregar un subtítulo</h4>
-            <p>Lorem ipsum dolor sit amet.</p>
-            <p><strong>$0000</strong></p>
-            <p>Nombre del curso</p>
-            <p>20hs</p>
-            <a href="#">Ver detalle</a>
+            <h4>Titulo Curso</h4>
+            <p>Lorem ipsum dolor sit.</p>
+            <p>$0000</p>
+            <p>20 horas</p>
+            <a href="#">Ver Detalle</a>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>Datos del Grupo</p>
+        <p>Datos del grupo | Lorem ipsum | Contacto</p>
     </footer>
 </body>
 </html>

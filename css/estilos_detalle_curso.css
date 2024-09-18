@@ -1,69 +1,32 @@
+/* General styles */
+/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    background-color: #f4f4f4;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #fff;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+/* Volver */
+.volver {
+    text-decoration: none;
+    font-size: 18px;
+    color: #f1c40f;
+    margin: 20px;
+    display: inline-block;
 }
 
-.logo img {
-    /* Ajusta el tamaño del logo */
-    height: 100px; /* Ajuste de altura */
-    width: auto; /* Mantiene proporciones */
-}
-
-.carrito {
-    /* Ajusta el tamaño del carrito y del icono de búsqueda */
-    width: 30px;
-    height: 30px;
-}
-
-.search-bar input {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.search-bar button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-}
-
-.cart {
-    position: relative;
-}
-
-.cart-count {
-    position: absolute;
-    top: -5px;
-    right: -10px;
-    background-color: red;
-    color: white;
-    border-radius: 50%;
-    padding: 3px 7px;
-    font-size: 12px;
-}
-
+/* Detalle del curso */
 .course-details {
     display: flex;
     padding: 20px;
     background-color: white;
     margin: 20px auto;
-    max-width: 1200px;
+    max-width: 800px;
 }
 
 .course-image img {
-    width: 300px;
+    width: 200px;
     height: auto;
     border-radius: 8px;
 }
@@ -73,13 +36,12 @@ header {
 }
 
 .course-info h2 {
-    font-size: 32px;
+    font-size: 24px;
     margin-bottom: 10px;
 }
 
 .course-info p {
     margin: 5px 0;
-    font-size: 16px;
 }
 
 .inscribirse {
@@ -95,77 +57,88 @@ header {
     background-color: #008e76;
 }
 
-.class-contents {
+/* Contenidos por clase */
+.content-instructor {
+    display: flex;
+    justify-content: space-around;
     padding: 20px;
-    background-color: white;
-    margin: 20px auto;
-    max-width: 1200px;
+}
+
+.class-contents {
+    width: 50%;
 }
 
 .class-contents h3 {
-    font-size: 24px;
+    font-size: 20px;
     margin-bottom: 15px;
 }
 
-.class-contents ul {
-    list-style: none;
-    padding: 0;
+details {
+    background-color: #e6f7f7;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.class-contents ul li {
+details[open] summary {
+    font-weight: bold;
+    color: #00796b;
+}
+
+details summary {
     font-size: 18px;
-    padding: 10px 0;
-    border-bottom: 1px solid #ccc;
 }
 
-.teacher-info {
-    display: flex;
-    padding: 20px;
-    background-color: white;
-    margin: 20px auto;
-    max-width: 1200px;
+details p {
+    margin: 10px 0;
+    padding-left: 20px;
 }
 
-.teacher-photo img {
-    width: 150px;
-    height: 150px;
+/* Instructor */
+.instructor-info {
+    text-align: center;
+}
+
+.instructor-info img {
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
 }
 
-.teacher-details {
-    margin-left: 20px;
+.instructor-info h3 {
+    font-size: 18px;
+    margin-top: 10px;
 }
 
-.teacher-details h3 {
-    font-size: 24px;
+.instructor-info span {
+    font-size: 16px;
+    color: #f1c40f;
 }
 
-.rating span {
-    font-size: 20px;
-    color: gold;
-}
-
+/* Cursos relacionados */
 .related-courses {
     padding: 20px;
     background-color: white;
     margin: 20px auto;
-    max-width: 1200px;
+    max-width: 800px;
+    display: flex;
 }
 
 .related-courses h3 {
-    font-size: 24px;
+    font-size: 20px;
     margin-bottom: 20px;
 }
 
 .course-card {
-    display: inline-block;
-    width: 23%;
+    width: 45%;
     margin-right: 2%;
     padding: 15px;
     border: 1px solid #ccc;
     background-color: #f9f9f9;
     text-align: center;
-    border-color: yellow;
+    border-radius: 5px;
 }
 
 .course-card h4 {
@@ -177,10 +150,16 @@ header {
     font-size: 16px;
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #343a40;
+.course-card a {
+    display: block;
+    padding: 10px;
+    background-color: #00bfa5;
     color: white;
-    margin-top: 40px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.course-card a:hover {
+    background-color: #008e76;
 }
